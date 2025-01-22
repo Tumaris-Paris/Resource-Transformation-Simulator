@@ -1,0 +1,3 @@
+/Users/tumaris/Desktop/projects/Resource Transformation Simulator/build/CMakeFiles/P2.dir
+/Users/tumaris/Desktop/projects/Resource Transformation Simulator/build/CMakeFiles/edit_cache.dir
+/Users/tumaris/Desktop/projects/Resource Transformation Simulator/build/CMakeFiles/rebuild_cache.dir
