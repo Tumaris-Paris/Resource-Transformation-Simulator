@@ -7,7 +7,7 @@ add_executable(P2 formula.cpp
         plan.cpp
         plan.h
         formula.h
-        p4.cpp
+        resource_transformation_simulator.cpp
         executablePlan.h
         executablePlan.cpp
         stockpile.h
