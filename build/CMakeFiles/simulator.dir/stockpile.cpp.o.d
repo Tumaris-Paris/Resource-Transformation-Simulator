@@ -1,4 +1,4 @@
-CMakeFiles/P2.dir/stockpile.cpp.o: \
+CMakeFiles/simulator.dir/stockpile.cpp.o: \
   /Users/tumaris/Desktop/projects/Resource\ Transformation\ Simulator/stockpile.cpp \
   /Users/tumaris/Desktop/projects/Resource\ Transformation\ Simulator/stockpile.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/map \

@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named P2
+# Target rules for targets named simulator
 
 # Build rule for target.
-P2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 P2
-.PHONY : P2
+simulator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simulator
+.PHONY : simulator
 
 # fast build rule for target.
-P2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/build
-.PHONY : P2/fast
+simulator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/build
+.PHONY : simulator/fast
 
 executablePlan.o: executablePlan.cpp.o
 .PHONY : executablePlan.o
 
 # target to build an object file
 executablePlan.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/executablePlan.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/executablePlan.cpp.o
 .PHONY : executablePlan.cpp.o
 
 executablePlan.i: executablePlan.cpp.i
@@ -142,7 +142,7 @@ executablePlan.i: executablePlan.cpp.i
 
 # target to preprocess a source file
 executablePlan.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/executablePlan.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/executablePlan.cpp.i
 .PHONY : executablePlan.cpp.i
 
 executablePlan.s: executablePlan.cpp.s
@@ -150,7 +150,7 @@ executablePlan.s: executablePlan.cpp.s
 
 # target to generate assembly for a file
 executablePlan.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/executablePlan.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/executablePlan.cpp.s
 .PHONY : executablePlan.cpp.s
 
 formula.o: formula.cpp.o
@@ -158,7 +158,7 @@ formula.o: formula.cpp.o
 
 # target to build an object file
 formula.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/formula.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/formula.cpp.o
 .PHONY : formula.cpp.o
 
 formula.i: formula.cpp.i
@@ -166,7 +166,7 @@ formula.i: formula.cpp.i
 
 # target to preprocess a source file
 formula.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/formula.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/formula.cpp.i
 .PHONY : formula.cpp.i
 
 formula.s: formula.cpp.s
@@ -174,39 +174,15 @@ formula.s: formula.cpp.s
 
 # target to generate assembly for a file
 formula.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/formula.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/formula.cpp.s
 .PHONY : formula.cpp.s
-
-p4.o: p4.cpp.o
-.PHONY : p4.o
-
-# target to build an object file
-p4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/p4.cpp.o
-.PHONY : p4.cpp.o
-
-p4.i: p4.cpp.i
-.PHONY : p4.i
-
-# target to preprocess a source file
-p4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/p4.cpp.i
-.PHONY : p4.cpp.i
-
-p4.s: p4.cpp.s
-.PHONY : p4.s
-
-# target to generate assembly for a file
-p4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/p4.cpp.s
-.PHONY : p4.cpp.s
 
 plan.o: plan.cpp.o
 .PHONY : plan.o
 
 # target to build an object file
 plan.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/plan.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/plan.cpp.o
 .PHONY : plan.cpp.o
 
 plan.i: plan.cpp.i
@@ -214,7 +190,7 @@ plan.i: plan.cpp.i
 
 # target to preprocess a source file
 plan.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/plan.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/plan.cpp.i
 .PHONY : plan.cpp.i
 
 plan.s: plan.cpp.s
@@ -222,15 +198,39 @@ plan.s: plan.cpp.s
 
 # target to generate assembly for a file
 plan.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/plan.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/plan.cpp.s
 .PHONY : plan.cpp.s
+
+simulator.o: simulator.cpp.o
+.PHONY : simulator.o
+
+# target to build an object file
+simulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/simulator.cpp.o
+.PHONY : simulator.cpp.o
+
+simulator.i: simulator.cpp.i
+.PHONY : simulator.i
+
+# target to preprocess a source file
+simulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/simulator.cpp.i
+.PHONY : simulator.cpp.i
+
+simulator.s: simulator.cpp.s
+.PHONY : simulator.s
+
+# target to generate assembly for a file
+simulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/simulator.cpp.s
+.PHONY : simulator.cpp.s
 
 stockpile.o: stockpile.cpp.o
 .PHONY : stockpile.o
 
 # target to build an object file
 stockpile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/stockpile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/stockpile.cpp.o
 .PHONY : stockpile.cpp.o
 
 stockpile.i: stockpile.cpp.i
@@ -238,7 +238,7 @@ stockpile.i: stockpile.cpp.i
 
 # target to preprocess a source file
 stockpile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/stockpile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/stockpile.cpp.i
 .PHONY : stockpile.cpp.i
 
 stockpile.s: stockpile.cpp.s
@@ -246,7 +246,7 @@ stockpile.s: stockpile.cpp.s
 
 # target to generate assembly for a file
 stockpile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/stockpile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/stockpile.cpp.s
 .PHONY : stockpile.cpp.s
 
 # Help Target
@@ -257,19 +257,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... P2"
+	@echo "... simulator"
 	@echo "... executablePlan.o"
 	@echo "... executablePlan.i"
 	@echo "... executablePlan.s"
 	@echo "... formula.o"
 	@echo "... formula.i"
 	@echo "... formula.s"
-	@echo "... p4.o"
-	@echo "... p4.i"
-	@echo "... p4.s"
 	@echo "... plan.o"
 	@echo "... plan.i"
 	@echo "... plan.s"
+	@echo "... simulator.o"
+	@echo "... simulator.i"
+	@echo "... simulator.s"
 	@echo "... stockpile.o"
 	@echo "... stockpile.i"
 	@echo "... stockpile.s"
